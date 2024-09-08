@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    font-family: 'Titillium Web', sans-serif;
+}
+.container {
+    width:500px;
+    max-width:95%;
+    margin:auto;
+    height:360px;
+}
+.container .search-box {
+    position: relative;
+    width:100%;
+}
+.container .search-box input[type = "text"]{
+    width:100%;
+    padding:10px;
+    border-radius:10px;
+    outline:none;
+    border: 1px solid #ccc;
+}
+
+.container .search-box  .fa-solid {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:10px;
+    color:gray;
+    cursor: pointer;
+}
+.container .content {
+    background-color:#eee;
+    list-style-type:none;
+    margin-top:10px;
+    border-radius:4px;
+}
+.container .content li {
+    padding:10px;
+}
+.container .content li:hover {
+    background-color: #ccc;
+    border-radius:4px;
+}
+/* hiden item in search */
+.hiden {
+    display:none;
+}
